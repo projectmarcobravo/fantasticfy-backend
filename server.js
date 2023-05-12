@@ -13,7 +13,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://fantasticfy-products.netlify.app/" }));
 
 app.get("/products", (req, res) => {
   const options = {
