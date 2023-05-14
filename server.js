@@ -34,7 +34,6 @@ app.get("/products", (req, res) => {
       },
     };
 
-    // Realiza una solicitud a la API de Shopify para obtener los detalles del producto según su ID
     axios
       .get(options.url, { headers: options.headers })
       .then((response) => {
